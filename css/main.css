@@ -1,0 +1,87 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.btn-menu {
+  padding: 10px;
+  color: white;
+  background: lightskyblue;
+  border: 1px solid #000;
+  cursor: pointer;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.btn-menu:hover {
+  border-radius: 5px 5px 0 0;
+  background: white;
+  color: #000;
+}
+
+.btn-menu:focus {
+  outline: none;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 46px;
+  width: 120px;
+  background: #666;
+}
+
+.menu-dropdown a {
+  display: block;
+  padding: 10px 0px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+.menu-dropdown a:hover {
+  background: #000;
+  text-decoration: none;
+  color: white;
+}
+
+.menu:hover .menu-dropdown {
+  display: block;
+}
+
+#home, #contato, #about {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  place-self: center;
+  background: #f5f5f5;
+  border-bottom: 1px solid #000;
+}
+
+#home h1, #contato h1, #about h1 {
+  font-size: 3em;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+}
+
+#home span, #contato span, #about span {
+  color: white;
+  font-weight: 800;
+  background: #af4747;
+  padding: 10px;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=main.css.map */
